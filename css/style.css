@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+    font-family: 'Varela Round', sans-serif;
+    background: #000;
+    background-image: url('../img/image-1.png');
+    background-repeat: no-repeat;
+    background-position: 80% -50%;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 15vh;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: rgba(7,7,7,.93);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    grid-column: 1/span 2;
+}
+
+.header .nav-menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 8/span 12;
+}
+
+.header .nav-menu-header .nav-link a {
+    font-size: 1.3rem;
+    color: #fff;
+    padding:1rem;
+}
+
+.header .nav-menu-header .nav-link a:hover {
+    color : #717171;
+}
+
+/* a */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-info {
+    padding: 80px 0;
+}
+
+.home-info .info-content {
+    margin-right: 45%;
+    margin-left: 100px;
+    color: #fff;
+}
+
+.home-info .info-content .portfolio-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 68px;
+}
+
+.home-info .info-content .portfolio-paragraph {
+    font-weight: 300;
+    font-size: 18px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* My Projects */
+
+.projects {
+    height: 60vh;
+    /* background: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8)); */
+    background : linear-gradient(0deg,#000,#172229),linear-gradient(180deg,#000,#000);
+    /* display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: relative; */
+    position: relative;
+}
+
+.projects .projects-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin: 0 50px;
+}
+
+.projects h5 {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+/*  */
+h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.projects .box {
+    width: 30%;
+    height: 60%;
+    margin-top: 40px;
+    transition: all 0.4s;
+    z-index: 20;
+}
+
+.projects .box img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projects .box:hover {
+    margin-bottom: 100px;
+}
+
+/* My Skills */
+
+.skills {
+    height: 60vh;
+    /* background: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8)); */
+    background: linear-gradient(0deg,#000,#0a1018),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
+
+.skills .skills-container {
+    color: #fff;
+    padding: 20px;
+}
+
+.skills .skills-container ul {
+    margin: 0 50px;
+}
+
+
+.skills .skills-container li {
+    position: relative;
+    list-style: none;
+    margin: 40px 0;
+}
+
+.skills .skills-container li:before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, .5);
+    border-radius: 1000px;
+}
+
+.skills .skills-container li:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skills .skills-container li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 55%;
+    }
+}
+
+.skills .skills-container li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 55%;
+    }
+}
+
+.skills .skills-container li.javascript:after {
+    animation-name: javascript;
+}
+
+@keyframes javascript {
+    to {
+        width: 25%;
+    }
+}
+
+.skills .skills-container li.react:after {
+    animation-name: react;
+}
+
+@keyframes react {
+    to {
+        width: 5%;
+    }
+}
+
+.skills .skills-container li.node:after {
+    animation-name: node;
+}
+
+@keyframes node {
+    to {
+        width: 5%;
+    }
+}
+
+.skills .skills-container li.java:after {
+    animation-name: java;
+}
+
+@keyframes java {
+    to {
+        width: 80%;
+    }
+}
+
+
+/* Contact Me */
+.contact {
+    height: 60vh;
+    /* background: linear-gradient(0deg,#000,#0a1018),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8)); */
+    /* background: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8)); */
+    background:linear-gradient(
+        0deg
+        ,#000,#0b000e),linear-gradient(
+        180deg
+        ,rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
+
+.contact .contact-container {
+    color: #fff;
+    padding: 20px;
+}
+
+.contact .contact-container .contact-form {
+    margin: 0 50px;
+}
+
+.contact .contact-container .contact-form .form-group {
+    margin: 10px 0;
+    max-width: 650px;
+}
+
+.contact .contact-container .contact-form .form-group label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact .contact-container .contact-form .form-group input,
+.contact .contact-container .contact-form .form-group textarea {
+    width: 650px;
+    line-height: 1.8rem;
+    border-radius: 15px;
+    border: none;
+    background: rgba(27,27,27,.91);
+    padding: 4px 0;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact .contact-container .contact-form .form-group textarea {
+    height: 125px;
+}
+
+.contact .contact-container .contact-form .submit-btn {
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    background: rgba(27,27,27,.91);
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact .contact-container .contact-form .submit-btn:hover {
+    color: #717171;
+}
+
+.contact .contact-container .contact-form .submit-btn:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -70px;
+    height: 60px;
+    width: 10px;
+    border: 5px solid #fff;
+    transform: skew(-25deg);
+    transition: 0.7s;
+}
+
+.contact .contact-container .contact-form .submit-btn:hover:before {
+    left: 150px;
+}
+
+/* Footer */
+
+.footer {
+    height: 60vh;
+    /* background: linear-gradient(180deg,#1f1f1f,#000),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8)); */
+    background-image: linear-gradient(
+        0deg
+        ,#000,#010f1f),linear-gradient(
+        180deg
+        ,rgba(0,0,0,.8),rgba(0,0,0,.8));
+}
