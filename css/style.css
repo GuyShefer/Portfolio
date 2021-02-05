@@ -16,7 +16,6 @@ body {
 
 .header {
     height: 15vh;
-    border: 1px solid;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgba(7,7,7,.93);
@@ -46,40 +45,35 @@ body {
 
 .header .nav-menu-header .nav-link a {
     font-size: 1.3rem;
-    color: #fff;
+    color: var(--primary-color);
     padding:1rem;
 }
 
 .header .nav-menu-header .nav-link a:hover {
-    color : #717171;
-}
-
-/* a */
-a {
-    text-decoration: none;
-    cursor: pointer;
+    color : var(--secondary-color);
 }
 
 .home-info {
+    height: 80vh;
     padding: 70px 0;
 }
 
 .home-info .info-content {
     margin-right: 45%;
     margin-left: 100px;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .home-info .info-content .portfolio-title {
     font-weight: 600;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 68px;
 }
 
 .home-info .info-content .portfolio-paragraph {
     font-weight: 300;
     font-size: 18px;
-    color: #ccc;
+    color: var(--secondary-color);
     text-align: center;
     margin-top: 18px;
 }
@@ -104,17 +98,10 @@ a {
 
 .projects h5 {
     position: absolute;
-    color: #fff;
+    color: var(--primary-color);
     top: 0;
     left: 0;
     padding: 30px;
-}
-
-/*  */
-h5 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 30px;
 }
 
 .projects .box {
@@ -143,7 +130,7 @@ h5 {
 }
 
 .skills .skills-container {
-    color: #fff;
+    color: var(--primary-color);
     padding: 20px;
 }
 
@@ -251,7 +238,7 @@ h5 {
 }
 
 .contact .contact-container {
-    color: #fff;
+    color: var(--primary-color);
     padding: 20px;
 }
 
@@ -279,7 +266,7 @@ h5 {
     background: rgba(27,27,27,.91);
     padding: 4px 0;
     padding-left: 10px;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 16px;
 }
 
@@ -293,7 +280,7 @@ h5 {
     border: none;
     border-radius: 15px;
     font-size: 20px;
-    color: #fff;
+    color: var(--primary-color);
     background: rgba(27,27,27,.91);
     cursor: pointer;
     margin-top: 10px;
@@ -302,7 +289,7 @@ h5 {
 }
 
 .contact .contact-container .contact-form .submit-btn:hover {
-    color: #717171;
+    color: var(--secondary-color);
 }
 
 .contact .contact-container .contact-form .submit-btn:before {
@@ -312,7 +299,7 @@ h5 {
     left: -70px;
     height: 60px;
     width: 10px;
-    border: 5px solid #fff;
+    border: 5px solid var(--primary-color);
     transform: skew(-25deg);
     transition: 0.7s;
 }
@@ -352,7 +339,7 @@ h5 {
 
 .footer .footer-container .find-me-right-here li a {
     cursor: pointer;
-    color:#fff4d6
+    color:#fff4d6;
 }
 
 .footer .footer-container .footer-line-block {
@@ -376,4 +363,20 @@ h5 {
 
 .footer .footer-container .logo img {
     width: 85px;
+}
+
+
+/* Mobile */
+
+@media(max-width: 700px) {
+    .header {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .logo {
+
+    }
+
 }
