@@ -1,0 +1,108 @@
+
+/* Header */
+.header {
+    height: 40vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.header .logo {
+    margin: 0; 
+}
+
+.header .nav-menu-header {
+    flex-direction: column;
+}
+
+.header .nav-menu-header .nav-link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #333;
+}
+
+.header .nav-menu-header .nav-link:nth-child(4){
+    border-bottom: none;
+}
+
+.header .nav-menu-header .nav-link a {
+    padding: 0;
+}
+
+/* Home Section */
+
+.home-info {
+    height: 75vh;
+    padding: 70px 0;
+}
+.home-info .info-content {
+    margin-right: 15%;
+    margin-left: 100px;
+    color: var(--primary-color);
+}
+
+.home-info .info-content .portfolio-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.home-info .info-content .portfolio-paragraph {
+    text-align: left;
+}
+
+/* Projects */
+
+.projects {
+    height: 100vh;
+}
+
+.projects .projects-container {
+    flex-direction: column;
+    margin: 0;
+}
+
+.projects .box {
+    width: 70%;
+    height: 60%;
+    margin-top: 20px;
+    transition: all 0.4s;
+    z-index: 20;
+}
+
+.projects .box:nth-child(2){
+    margin-top: 80px;
+}
+
+.projects .box:hover {
+    margin-bottom: 0;
+    width: 60%;
+}
+
+/* Contact Me */
+
+.contact .contact-container .contact-form .form-group input,
+.contact .contact-container .contact-form .form-group textarea {
+    width: 400px;
+}
+
+/* Footer */
+
+.footer {
+    height: 60vh;
+}
+
+.footer .footer-container {
+    margin: 0 10%;
+    padding: 60px 0 30px 0;
+}
+
+
+.footer .footer-container .logo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
