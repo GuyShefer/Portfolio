@@ -33,6 +33,10 @@ body {
     grid-column: 1/span 2;
 }
 
+.header .logo img {
+    width: 85px;
+}
+
 .header .nav-menu-header {
     display: flex;
     justify-content: space-around;
@@ -343,7 +347,7 @@ h5 {
 }
 
 .footer .footer-container .find-me-right-here {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .footer .footer-container .find-me-right-here li a {
@@ -354,14 +358,22 @@ h5 {
 .footer .footer-container .footer-line-block {
     width: 100%;
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     height: 1px;
     margin-right: auto;
     background-color: #fff4d6;
 }
 
-footer .footer-container p {
+.footer .footer-container p {
     color:#fff4d6;
     text-align: center;
 }
 
+.footer .footer-container .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .footer-container .logo img {
+    width: 85px;
+}
