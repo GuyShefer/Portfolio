@@ -16,6 +16,7 @@ body {
 
 .header {
     height: 15vh;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     background-color: rgba(7,7,7,.93);
@@ -57,6 +58,7 @@ body {
 
 .home-info {
     height: 80vh;
+    width: 100%;
     padding: 70px 0;
 }
 
@@ -84,6 +86,7 @@ body {
 
 .projects {
     height: 70vh;
+    width: 100%;
     background : linear-gradient(0deg,#000,#172229),linear-gradient(180deg,#000,#000);
     position: relative;
 }
@@ -128,6 +131,7 @@ body {
 
 .skills {
     height: 70vh;
+    width: 100%;
     background: linear-gradient(0deg,#000,#0a1018),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
 }
 
@@ -236,6 +240,7 @@ body {
 /* Contact Me */
 .contact {
     height: 70vh;
+    width: 100%;
     background:linear-gradient(0deg,#000,#0b000e),linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.8));
 }
 
