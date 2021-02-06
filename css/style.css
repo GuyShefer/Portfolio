@@ -275,6 +275,7 @@ body {
     padding-left: 10px;
     color: var(--primary-color);
     font-size: 16px;
+    outline: none;
 }
 
 .contact .contact-container .contact-form .form-group textarea {
@@ -293,6 +294,7 @@ body {
     margin-top: 10px;
     position: relative;
     overflow: hidden;
+    outline: none;
 }
 
 .contact .contact-container .contact-form .submit-btn:hover {
