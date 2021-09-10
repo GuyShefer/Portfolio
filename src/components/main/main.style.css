@@ -1,7 +1,15 @@
+.main-background {
+    background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(5,5,13,1) 0%, rgba(4,51,60,0.9136029411764706) 100%);
+    display: flex;
+    justify-content: center;
+}
+
 .main {
-    margin: 30px auto;
+    margin: 30px auto 0;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     max-width: 1100px;
 }
+

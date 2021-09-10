@@ -7,9 +7,11 @@ const Main = () => {
     const [projects] = useState(initProjects);
 
     return (
-        <main className="main">
-            {projects && projects.map((project, index) => <Card key={index} project={project} />)}
-        </main>
+        <div className="main-background">
+            <main className="main">
+                {projects && projects.map((project, index) => <Card key={index} project={project} />)}
+            </main>
+        </div>
     )
 }
 

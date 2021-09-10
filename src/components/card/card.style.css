@@ -1,6 +1,6 @@
 .card {
     margin: 30px auto;
-    width: 250px;
+    width: 260px;
     height: 380px;
     border-radius: 4px;
     padding: 15px;
@@ -34,7 +34,7 @@
 }
 
 .card, .title, p, .cardBadges, .card-buttons {
-    background: rgb(30, 36, 44);
+    background: #061315;
     color: #fff;
 }
 
