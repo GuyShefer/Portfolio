@@ -1,0 +1,23 @@
+.header {
+    background: rgb(30, 36, 44);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    height: 70px;
+}
+
+.header-container {
+    display: flex;
+    align-items: baseline;
+    background: rgb(30, 36, 44);
+}
+
+.header h2, .header span {
+    background: rgb(30, 36, 44);
+}
+
+.header span {
+    margin-left: 10px;
+}

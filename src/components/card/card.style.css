@@ -1,0 +1,81 @@
+.card {
+    margin: 30px auto;
+    width: 250px;
+    height: 380px;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(0.96, 0.96);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(107 107 108 / 35%);
+    margin-bottom: 10px;
+    height: 70px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card, .title, p, .cardBadges, .card-buttons {
+    background: rgb(30, 36, 44);
+    color: #fff;
+}
+
+.cardBadges {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+}
+
+.badge {
+    border-radius: 15px;
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 5px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: rgb(30, 36, 44);
+    max-height: 20px;
+    padding: 20px;
+    border: 1px solid #6e6f71;
+    cursor: pointer;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #6e6f71;
+    color: #fff;
+}
