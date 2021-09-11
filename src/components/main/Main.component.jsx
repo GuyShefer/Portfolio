@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './main.style.css';
-import initProjects from '../../utils/projects';
+import projectsArr from '../../utils/projects';
 import Card from '../card/Card.component';
 
 const Main = () => {
-    const [projects] = useState(initProjects);
+    const [projects] = useState(projectsArr);
 
     return (
         <div className="main-background">

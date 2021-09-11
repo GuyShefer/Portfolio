@@ -1,4 +1,4 @@
-export default [
+const projectsArr = [
     {
         "name": "Pokemon - Math The Memory",
         "description": "An addictive Pokemon memory game made with pure Javascript, CSS, and HTML5.",
@@ -98,3 +98,5 @@ export default [
         "technologies": ["html5", "css3"]
     },
 ]
+
+export default projectsArr;
