@@ -1,5 +1,7 @@
-const baseDir =  document.location.hostname === "localhost" ?
-  '' :'/portfolio/images/tech/';
+// const baseDir =  document.location.hostname === "localhost" ?
+//   '' :'/portfolio/images/tech/';
+
+const baseDir = '';
 
 const techImages = {
     mongodb: baseDir + "mongodb.png",
